@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   gap: 10px;
   background-color: rgb(225, 210, 225);
   padding: 5px;
-  // height: 150px;
+
   border-radius: 10px;
 `;
 
@@ -41,7 +41,7 @@ export const List = styled.ul`
   flex-direction: column;
   gap: 5px;
   font-size: 600;
-  // list-style-type: circle;
+
   border: 2px solid rgba(33, 33, 33, 0.2);
   padding: 10px;
   width: 90%;
