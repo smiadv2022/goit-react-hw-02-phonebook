@@ -5,14 +5,6 @@ import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
 import data from './data.json';
-// import {
-//   //   //   // Container,
-//   //   //   // Section,
-//   ContactForm,
-//   //   ContactList,
-//   //   //   // Filter,
-//   //   //   // Heading,
-// } from 'components';
 
 export class App extends React.Component {
   state = {
@@ -47,8 +39,6 @@ export class App extends React.Component {
   };
 
   getFilteredContacts = () => {
-    // const normalizedQuery = this.state.filter.toLowerCase();
-
     const filteredContacts = this.state.contacts.filter(contact =>
       contact.name.toLowerCase().includes(this.state.filter.toLowerCase())
     );
@@ -68,33 +58,16 @@ export class App extends React.Component {
         <Section>
           <Title>Contacts</Title>
           <Filter value={filter} onChange={this.handleFilterChange} />
-          <ContactList
-            contacts={filteredContacts}
-            onDeleteContact={this.handleDeleteContact}
-          />
+          {filteredContacts.length > 0 ? (
+            <ContactList
+              contacts={filteredContacts}
+              onDeleteContact={this.handleDeleteContact}
+            />
+          ) : (
+            'Сontact not found'
+          )}
         </Section>
       </Container>
     );
   }
 }
-
-// const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101',
-//       }}
-//     >
-//       <Container>
-//         <ContactList></ContactList>
-//         React homework template11
-//         {/* <ContactList></ContactList> */}
-//       </Container>
-//     </div>
-//   );
-// };

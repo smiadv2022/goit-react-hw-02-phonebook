@@ -3,7 +3,9 @@ import styled from '@emotion/styled';
 export const Form = styled.form`
   border: 2px solid rgba(33, 33, 33, 0.2);
   padding: 10px;
-  width: 50%;
+  width: 90%;
+  background-color: rgba(181, 175, 181, 0.5);
+  border-radius: 10px;
 `;
 export const Label = styled.label`
   display: block;
@@ -22,11 +24,11 @@ export const InputContact = styled.input`
   box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.28) 0px 0px 0px 1px;
 
-  background-color: rgba(30, 26, 30, 0.5);
+  background-color: rgba(181, 175, 181, 0.5);
+  background-color: rgba(243, 237, 243, 0.937);
   cursor: pointer;
   &:hover {
-    background-color: rgba(231, 120, 131, 0.15);
-
+    background-color: rgba(181, 275, 281, 0.3);
     color: black;
 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 24px 0px,
@@ -38,16 +40,20 @@ export const Button = styled.button`
   display: flex;
   padding: 0.375rem 0.75rem;
 
-  background-color: rgba(30, 26, 30, 0.5);
-
-  color: black;
+  background-color: rgba(181, 175, 181, 0.9);
+  background-color: rgba(0, 0, 0, 0.25) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.28) 0px 0px 0px 1px;
+  color: blue;
   font-size: 600;
   line-height: 1.25rem;
   font-weight: 600;
   justify-content: center;
-  width: 100px;
-  marging: 5px;
-  border-radius: 0.375rem;
+  width: 120px;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  border-color: blue;
 
   :hover {
     background-color: rgba(231, 120, 131, 0.15);

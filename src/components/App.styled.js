@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: rgb(166, 151, 166, 0.7);
+  background-color: rgba(216, 208, 216, 0.5);
   padding: 10px;
   margin-right: auto;
   margin-left: auto;
@@ -10,7 +10,7 @@ export const Container = styled.div`
   width: 100vh;
 `;
 export const Title = styled.h2`
-  margin: 3rem 5px 1rem 5px;
+  margin: 0px;
   color: #111827;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -19,11 +19,14 @@ export const Title = styled.h2`
 `;
 export const Section = styled.div`
   display: flex;
-  align-items: center;
+  // align-items: center;
   flex-direction: column;
   gap: 10px;
-  background-color: rgb(225, 210, 225);
-  padding: 5px;
-  // height: 150px;
+  border: 2px solid rgba(33, 33, 33, 0.2);
+  padding: 10px;
+  width: 70%;
+  margin: 0px;
+  padding: 20px;
+  background-color: rgba(181, 175, 181, 0.5);
   border-radius: 10px;
 `;
