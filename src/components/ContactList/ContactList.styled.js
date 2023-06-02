@@ -55,7 +55,7 @@ export const Item = styled.li`
 
   padding: 5px;
   font-size: 400;
-  // list-style: circle;
+
   line-height: 1rem;
   border: 1px solid lightgray;
   border-radius: 10px;
