@@ -29,4 +29,6 @@ export const Section = styled.div`
   padding: 20px;
   background-color: rgba(181, 175, 181, 0.5);
   border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
 `;
