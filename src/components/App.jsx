@@ -57,7 +57,7 @@ export class App extends React.Component {
         </Section>{' '}
         <Section>
           <Title>Contacts</Title>
-          <Filter value={filter} onChange={this.handleFilterChange} />
+          <Filter value={filter} Input={this.handleFilterChange} />
           {filteredContacts.length > 0 ? (
             <ContactList
               contacts={filteredContacts}
